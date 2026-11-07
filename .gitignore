@@ -1,0 +1,55 @@
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# Next.js
+/.next/
+/out/
+
+# Production
+/build
+
+# Environment & secrets
+.env
+.env*.local
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vercel
+.vercel
+
+# Supabase
+supabase/.temp
+
+# Thesis / defense materials (local only — keep out of GitHub app repo)
+/doc/
+
+# Accidental Office unpack dirs
+**/_docx_tmp/
+**/_ff_tmp/
+**/_ff_tmp2/
+**/_fff_tmp/
+**/_ff_ppt_tmp/
+~$*
+
+# Generated test output
+doc/test-results/*.json

@@ -1,0 +1,29 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/sync-orders",
+      "schedule": "0 0 * * *"
+    },
+    {
+      "path": "/api/cron/sync-supplier",
+      "schedule": "0 1 * * *"
+    }
+  ],
+  "functions": {
+    "app/api/cron/sync-orders/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/cron/sync-supplier/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/cron/backfill-finance/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/cron/backfill-sheets/route.ts": {
+      "maxDuration": 60
+    },
+    "app/api/webhooks/shopify/route.ts": {
+      "maxDuration": 30
+    }
+  }
+}
